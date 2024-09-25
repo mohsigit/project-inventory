@@ -39,6 +39,13 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Dashboard
                                 </NavLink>
+                                
+                                <NavLink
+                                    href="/testPage"
+                                    :active="route().current('cobaTest')"
+                                >
+                                    Test Page
+                                </NavLink>
                             </div>
                         </div>
 
@@ -74,7 +81,7 @@ const showingNavigationDropdown = ref(false);
                                         <DropdownLink
                                             :href="route('profile.edit')"
                                         >
-                                            Profile Saya
+                                            Profile test
                                         </DropdownLink>
                                         <DropdownLink
                                             :href="route('logout')"
